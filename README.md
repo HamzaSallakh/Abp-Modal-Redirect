@@ -1,4 +1,3 @@
-## 📝 **Title:**
 **Stop Using `NoContent()` in ABP Modals — Here's What to Do Instead**
 ---
 
