@@ -52,10 +52,9 @@ const deleteAccountModal = new abp.ModalManager({
 
 $('#delete-account-btn').click(() => deleteAccountModal.open());
 
-deleteAccountModal.onResult((result) => {
-    if (result?.redirect) {
-        window.location.href = result.redirect;
-    }
+deleteAccountModal.onResult(function (result, response) {
+       var redirect = response.responseText.redirect;
+       if (redirect) { window.location.href = redirect; } 
 });
 ```
 
